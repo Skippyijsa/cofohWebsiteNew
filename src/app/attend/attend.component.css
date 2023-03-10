@@ -1,0 +1,40 @@
+.text-container {
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-top: 100 px;
+  display: flex;
+}
+.get-tickets-btn-container {
+  display: flex;
+  justify-content: center;
+}
+@media only screen and (min-width: 1038px) {
+  .guest-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    margin-right: 400px;
+    margin-left: 400px;
+  }
+}
+@media only screen and (min-width: 1038px) {
+  .guest-announce-container {
+    margin-top: 50px;
+    margin-left: 400px;
+    margin-right: 400px;
+  }
+}
+
+.get-tickets-btn-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+.book-room-header {
+  font-size: 30px;
+  text-align: center;
+  justify-content: center;
+  margin-top: 50px;
+}

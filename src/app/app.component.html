@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>COFOH</title>
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    /> -->
+    <!-- <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    /> -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.7/css/all.css"
+    />
+  </head>
+  <body>
+    <!-- <nav class="nav-wraper">
+      <div class="container">
+        <a href="#" class="brand-logo">Cofoh</a>
+        <a href="#" class="sidenav-trigger" data-target="mobile-links">
+          <i class="material-icons">menu</i>
+        </a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#">Home </a></li>
+          <li><a href="#">Attend </a></li>
+          <li><a href="#">Get Involved </a></li>
+          <li><a href="#">Contact Us </a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-links">
+      <li><a href="#">Home </a></li>
+      <li><a href="#">Attend </a></li>
+      <li><a href="#">Get Involved </a></li>
+      <li><a href="#">Contact Us </a></li>
+    </ul> -->
+
+    <mat-toolbar>
+      <button
+        mat-icon-button
+        *ngIf="sidenav.mode === 'over'"
+        (click)="sidenav.toggle()"
+      >
+        <mat-icon *ngIf="!sidenav.opened"> menu </mat-icon>
+        <mat-icon *ngIf="sidenav.opened"> close </mat-icon>
+      </button>
+      <a href="https://www.cofestivalofhorror.com/#/" 
+          ><img src="assets/logoSmall.png" /></a
+        >
+    </mat-toolbar>
+
+    <mat-sidenav-container style="background-color: #283446">
+      <mat-sidenav #sidenav="matSidenav">
+        <button mat-button class="menu-button" (click)="home()">
+          <mat-icon>home</mat-icon>
+          <span>Home</span>
+        </button>
+
+        <button mat-button class="menu-button" (click)="attend()">
+          <mat-icon>room</mat-icon>
+          <span>Attend</span>
+        </button>
+
+        <button mat-button class="menu-button" (click)="getInvolved()">
+          <mat-icon>people</mat-icon>
+          <span>Get Involved</span>
+        </button>
+
+        <button mat-button class="menu-button" (click)="sponsorship()">
+          <mat-icon>business_center</mat-icon>
+          <span>Sponsorships</span>
+        </button>
+
+        <button mat-button class="menu-button" (click)="programming()">
+          <mat-icon>code</mat-icon>
+          <span>programming</span>
+        </button>
+
+        <button mat-button class="menu-button" (click)="codeOfConduct()">
+          <mat-icon>description</mat-icon>
+          <span>Code of Conduct</span>
+        </button>
+
+        <mat-divider></mat-divider>
+
+        <button mat-button class="menu-button" (click)="contactUs()">
+          <mat-icon>contact_support</mat-icon>
+          <span>Contact Us</span>
+        </button>
+      </mat-sidenav>
+
+      <mat-sidenav-content>
+        <router-outlet></router-outlet>
+      </mat-sidenav-content>
+    </mat-sidenav-container>
+    <footer
+      style="background-color: #76aeab; text-align: center"
+      class="page-footer"
+    >
+      <p class="grey-text text-lighten-4">
+        <a
+          class="social-link"
+          href="https://www.facebook.com/cofohorror/"
+          target="_blank"
+        >
+          <i class="fab fa-facebook social-icon"></i>
+        </a>
+
+        <a
+          class="social-link"
+          href="https://www.instagram.com/coloradofestivalofhorror/"
+          target="_blank"
+        >
+          <i class="fab fa-instagram social-icon"></i>
+        </a>
+
+        <a
+          class="social-link"
+          href="https://twitter.com/CCofoh"
+          target="_blank"
+        >
+          <i class="fab fa-twitter social-icon"></i>
+        </a>
+        <br />
+        © 2023 COFOH Entertainment
+      </p>
+    </footer>
+  </body>
+</html>

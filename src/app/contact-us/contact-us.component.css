@@ -1,0 +1,13 @@
+.text-container {
+  margin-top: 10px;
+}
+
+.text-style {
+  font-size: 20px;
+  color: #ecebdb;
+  text-align: center;
+}
+
+a:hover {
+  color: #e3ac34;
+}

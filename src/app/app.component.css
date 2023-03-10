@@ -1,0 +1,145 @@
+body,
+html {
+  margin: 0;
+  width: 100%;
+}
+
+html {
+  background-color: gray;
+}
+
+.container {
+  padding: 1em;
+  max-width: 100%;
+  min-height: 100vh;
+  width: 100%;
+  margin: auto;
+  box-sizing: border-box;
+  background-color: #283446;
+}
+
+.row {
+  margin: 0;
+  padding-left: 20px;
+}
+
+@media only screen and (max-width: 1038px) {
+  .video-container {
+    display: flex;
+    width: 100%;
+    padding-top: 50px;
+  }
+}
+
+.video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.centered {
+  position: absolute;
+  top: 37.5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.centered-small {
+  position: relative;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.cofoh-navbar {
+  background-color: #76aeab !important;
+}
+.calendar-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 30px;
+}
+.title-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-height: 0px;
+  margin: 20px;
+  padding-bottom: 50px;
+}
+@media only screen and (max-width: 1038px) {
+  .cofoh-sDate-container {
+    margin: 20px;
+  }
+}
+.E3AC34 {
+  color: #eb4034;
+}
+@media only screen and (min-width: 1038px) {
+  .guest-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    margin-right: 400px;
+    margin-left: 400px;
+  }
+}
+@media only screen and (min-width: 1038px) {
+  .guest-announce-container {
+    margin-top: 50px;
+    margin-left: 400px;
+    margin-right: 400px;
+  }
+}
+.footer {
+  text-align: center;
+  padding: 3px;
+  background-color: DarkSalmon;
+  color: #ecebdb;
+}
+.mat-toolbar {
+  background: #283446;
+  color: #ecebdb;
+}
+
+.mat-sidenav {
+  margin: 16px;
+  width: 200px;
+  border-right: none;
+  background: #283446;
+  color: #ecebdb;
+  border-radius: 10px;
+  padding: 16px;
+  text-align: center;
+}
+
+.mat-sidenav-container {
+  height: calc(100vh - 65px);
+}
+
+.menu-button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 1rem;
+}
+.photo-container {
+  width: 100%;
+  height: 75%;
+  display: flex;
+}
+
+.social-icon {
+  margin: 5px;
+  font-size: 30px;
+}
+
+.social-link {
+  color: black;
+  text-decoration: none;
+}
